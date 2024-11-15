@@ -1,0 +1,27 @@
+spring.application.name=popply
+
+# log4jdbc console logging (같은 로컬호스트를 공유하는 다른 원격서버
+# 네트워크 상에서 다른 컴퓨터 = 원격서버를 의미)
+#spring.datasource.driver-class-name=net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+########################### DB Connections ###############################
+# localhost
+#spring.datasource.url=jdbc:log4jdbc:oracle:thin:@localhost:1521/x
+
+# tjoeun static (원격서버 192.168.50.146)
+#spring.datasource.url=jdbc:log4jdbc:oracle:thin:@192.168.50.146:1521/xe
+
+# etc loopback (루프백 주소)
+#spring.datasource.url=jdbc:log4jdbc:oracle:thin:@127.0.0.1:1521/xe
+##########################################################################
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+#spring.datasource.url=jdbc:oracle:thin:@localhost:1521/xe
+spring.datasource.username=springboot
+spring.datasource.password=1234
+spring.datasource.hikari.maximum-pool-size=5
+
+# JPA hibernate SQL logging
+spring.jpa.database-platform=org.hibernate.dialect.OracleDialect
+spring.jpa.open-in-view=false
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.hbm2ddl.auto=update
