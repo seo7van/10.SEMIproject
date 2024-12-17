@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.img-style {
+  width: 500px; /* 원하는 너비 */
+  height: 500px; /* 원하는 높이 */
+  margin: 0; /* 이미지 간의 간격을 없애기 */
+  display: inline-block; /* 이미지를 같은 줄에 배치 */
+}
+
+ul {
+  list-style-type: none; /* Removes the bullets or dots */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+li {
+  margin-bottom: 10px; /* Optional: Adds space between list items */
+}
+
